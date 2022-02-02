@@ -56,7 +56,7 @@ Save and submit the completed file for your homework submission.
     free -h > ~/backups/freemem/free_mem.txt
     
     # Disk usage 
-    df -h | awk -F " " '{print $1, $2, $3, $5}' > ~/backups/diskuse/disk_usage.txt
+    du -h > ~/backups/diskuse/disk_usage.txt
     
     # all open files
     lsof > ~/backups/openlist/open_list.txt
@@ -67,8 +67,13 @@ Save and submit the completed file for your homework submission.
 
 3. Command to make the `system.sh` script executable:
 
+            sudo chmod 700 system.sh
+         
+
 **Optional**
 - Commands to test the script and confirm its execution:
+
+            sudo ./system.sh
 
 **Bonus**
 - Command to copy `system` to system-wide cron directory:
