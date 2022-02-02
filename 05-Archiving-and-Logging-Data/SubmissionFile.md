@@ -36,6 +36,8 @@ Save and submit the completed file for your homework submission.
 
 1. Cron job for backing up the `/var/log/auth.log` file:
 
+            0 6 * * 3 tar -cvzf /auth_backup.tgz /var/log/auth.log
+
 ---
 
 ### Step 3: Write Basic Bash Scripts
