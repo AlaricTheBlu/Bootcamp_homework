@@ -51,7 +51,18 @@ Save and submit the completed file for your homework submission.
 
     ```bash
     #!/bin/bash
-    [Your solution script contents here]
+    
+    # Save amount of free memory on system
+    free -h > ~/backups/freemem/free_mem.txt
+    
+    # Disk usage 
+    df -h | awk -F " " '{print $1, $2, $3, $5}' > ~/backups/diskuse/disk_usage.txt
+    
+    # all open files
+    lsof > ~/backups/openlist/open_list.txt
+    
+    # file system disk space stats
+    df -h > ~/backups/freedisk/free_disk.txt
     ```
 
 3. Command to make the `system.sh` script executable:
