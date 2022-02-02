@@ -14,7 +14,12 @@ Save and submit the completed file for your homework submission.
 
 2. Command to **create** the `Javaless_Doc.tar` archive from the `TarDocs/` directory, while excluding the `TarDocs/Documents/Java` directory:
 
+            tar -cvf Javaless_Docs.tar --exclude="TarDocs/Documents/Java" TarDocs/Documents
+
 3. Command to ensure `Java/` is not in the new `Javaless_Docs.tar` archive:
+
+            tar -tf Javaless_Docs.tar | grep -i java
+
 
 **Bonus** 
 - Command to create an incremental archive called `logs_backup_tar.gz` with only changed files to `snapshot.file` for the `/var/log` directory:
