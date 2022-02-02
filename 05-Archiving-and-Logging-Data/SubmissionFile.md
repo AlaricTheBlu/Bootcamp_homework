@@ -28,6 +28,8 @@ Save and submit the completed file for your homework submission.
 
 - Why wouldn't you use the options `-x` and `-c` at the same time with `tar`?
 
+-x and -c stand for extract and create. It would not be posssible to do both at the same time, and would serve no point to do so anyway.
+
 ---
 
 ### Step 2: Create, Manage, and Automate Cron Jobs
