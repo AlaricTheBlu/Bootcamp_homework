@@ -44,6 +44,9 @@ Save and submit the completed file for your homework submission.
 
 1. Brace expansion command to create the four subdirectories:
 
+            mkdir -p ~/backups/{freemem,diskuse,openlist,freedisk}
+            
+
 2. Paste your `system.sh` script edits below:
 
     ```bash
