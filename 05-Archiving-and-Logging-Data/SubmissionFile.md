@@ -98,6 +98,8 @@ Save and submit the completed file for your homework submission.
     ```
 ---
 
+Ran out of time for bonus questions. Sorry.
+
 ### Bonus: Check for Policy and File Violations
 
 1. Command to verify `auditd` is active:
