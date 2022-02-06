@@ -17,10 +17,11 @@ Save and submit the completed file for your homework submission.
 
 4. Give your secret user the same GID:
    - groupmod -g 202 sysd
-   - usermod -g 202 sysd
 
 5. Give your secret user full `sudo` access without the need for a password:
-   -  `Your solution command here`
+   -  visudo
+   -  in the sudoers file, append at the end: 
+   -  sysd ALL = NOPASSWD: ALL
 
 6. Test that `sudo` access works without your password:
 
