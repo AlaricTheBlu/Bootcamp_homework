@@ -27,8 +27,9 @@ Save and submit the completed file for your homework submission.
    -  logged in to server as sysd in a new terminal, just to be safe if I made any syntax errors in sudoers
 
     ```bash
-    ssh sysd@192.168.6.105 -p 22
+    ssh sysadmin@192.168.6.105 -p 22
     entered password
+    sudo su sysd 
     sudo -l
     sudo -u root whoami
     ```
