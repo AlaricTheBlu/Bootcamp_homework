@@ -33,7 +33,7 @@ Save and submit the completed file for your homework submission.
     sudo -l
     sudo -u root whoami
     ```
-    Both output expected results from someone with sudo access
+    Both output expected results from someone with sudo access, without asking for a password.
 
 **Step 2: Smooth Sailing**
 
