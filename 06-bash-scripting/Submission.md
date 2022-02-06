@@ -30,7 +30,9 @@ Save and submit the completed file for your homework submission.
     ssh sysd@192.168.6.105 -p 22
     entered password
     sudo -l
+    sudo -u root whoami
     ```
+    Both output expected results from someone with sudo access
 
 **Step 2: Smooth Sailing**
 
