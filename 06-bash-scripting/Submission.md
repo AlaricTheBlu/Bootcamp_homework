@@ -7,16 +7,17 @@ Save and submit the completed file for your homework submission.
 **Step 1: Shadow People** 
 
 1. Create a secret user named `sysd`. Make sure this user doesn't have a home folder created:
-    - `Your solution command here`
+    - adduser --no-create-home sysd
 
 2. Give your secret user a password: 
-    - `Your solution command here`
+    - When prompted for password for user, enter the password. I did SupaMar10
 
 3. Give your secret user a system UID < 1000:
-    - `Your solution command here`
+    - usermod -u 202 sysd
 
 4. Give your secret user the same GID:
-   - `Your solution command here`
+   - groupmod -g 202 sysd
+   - usermod -g 202 sysd
 
 5. Give your secret user full `sudo` access without the need for a password:
    -  `Your solution command here`
