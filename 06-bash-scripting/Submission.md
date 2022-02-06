@@ -24,9 +24,12 @@ Save and submit the completed file for your homework submission.
    -  sysd ALL = NOPASSWD: ALL
 
 6. Test that `sudo` access works without your password:
+   -  logged in to server as sysd in a new terminal, just to be safe if I made any syntax errors in sudoers
 
     ```bash
-    Your bash commands here
+    ssh sysd@192.168.6.105 -p 22
+    entered password
+    sudo -l
     ```
 
 **Step 2: Smooth Sailing**
