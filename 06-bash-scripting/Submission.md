@@ -72,6 +72,7 @@ Save and submit the completed file for your homework submission.
     - `john /etc/shadow`
 
 Passwords are:
+
     stallman - computer
     babbage - freedom
     mitnik - trustno1
