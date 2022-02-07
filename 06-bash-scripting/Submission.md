@@ -52,12 +52,13 @@ Save and submit the completed file for your homework submission.
 
 2. Exit the `root` account:
     - `exit`
+    - needed to be done a couple of times
 
 3. SSH to the target machine using your `sysd` account and port `2222`:
-    - `Your solution command here`
+    - `ssh sysd@192.168.6.105 -p 2222`
 
 4. Use `sudo` to switch to the root user:
-    - `Your solution command here`
+    - `sudo su`
 
 **Step 4: Crack All the Passwords**
 
