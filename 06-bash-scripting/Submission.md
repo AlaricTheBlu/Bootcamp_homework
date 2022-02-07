@@ -48,10 +48,11 @@ Save and submit the completed file for your homework submission.
 
 **Step 3: Testing Your Configuration Update**
 1. Restart the SSH service:
-    - `Your solution command here`
+    - `/etc/init.d/ssh restart`
 
 2. Exit the `root` account:
-    - `Your solution command here`
+    - `exit
+    - needed to do it a couple of times`
 
 3. SSH to the target machine using your `sysd` account and port `2222`:
     - `Your solution command here`
