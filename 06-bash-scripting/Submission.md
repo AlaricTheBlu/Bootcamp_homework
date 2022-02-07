@@ -40,7 +40,10 @@ Save and submit the completed file for your homework submission.
 1. Edit the `sshd_config` file:
 
     ```bash
-    Your bash commands here
+    uncomment #Port 22
+    
+    then add below:
+    Port 2222
     ```
 
 **Step 3: Testing Your Configuration Update**
