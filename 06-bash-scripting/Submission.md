@@ -51,8 +51,7 @@ Save and submit the completed file for your homework submission.
     - `/etc/init.d/ssh restart`
 
 2. Exit the `root` account:
-    - `exit
-    - needed to do it a couple of times`
+    - `exit`
 
 3. SSH to the target machine using your `sysd` account and port `2222`:
     - `Your solution command here`
