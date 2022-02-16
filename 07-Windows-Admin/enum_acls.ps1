@@ -1,6 +1,6 @@
 #Script to list Active Control List for everything in a directory
 
-$direcotry = dir
+$directory = dir
 
 foreach ($item in $directory) {
       Get-Acl $item
