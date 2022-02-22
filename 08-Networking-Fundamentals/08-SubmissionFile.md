@@ -1,4 +1,4 @@
 ## Networking Fundamentals Homework
 
-# Phase 1: Ping
+### Phase 1: Ping
 
