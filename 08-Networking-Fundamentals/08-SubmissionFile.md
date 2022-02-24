@@ -25,7 +25,7 @@ corp doesn't want any of its servers to be resopnding to requests.
 
 ### Phase 3: DNS
 
- - First, we must log in to the server using rockstar's default credentials. First we connect with ssh, then say yes to the connection, and finally, enter the password to finish connecting.
+ - First, we must log in to the server using rockstar's default credentials. We connect with ssh, then say yes to the connection, and finally, enter the password to finish connecting.
 
          ssh jimi@167.172.144.11
          yes
