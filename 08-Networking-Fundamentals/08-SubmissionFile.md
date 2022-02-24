@@ -25,8 +25,14 @@ corp doesn't want any of its servers to be resopnding to requests.
 
 ### Phase 3: DNS
 
- - first, we must log in to the server using rockstar's default credentials. First we connect with ssh, then say yes to the connection, and finally, enter the password to finish connecting.
+ - First, we must log in to the server using rockstar's default credentials. First we connect with ssh, then say yes to the connection, and finally, enter the password to finish connecting.
 
          ssh jimi@167.172.144.11
          yes
          hendrix
+ - We are now logged into the server. In order to check and see why rollingstone.com sends to a different ip, we must check the DNS cache (/etc/hosts). To do this, I used the command:
+
+        grep "rollingstone.com" /etc/hosts
+        
+ - This grabs the line for rollingstone.com from the DNS cache. It returned:
+        98.137.246.8 rollingstone.com
