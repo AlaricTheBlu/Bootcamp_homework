@@ -35,4 +35,5 @@ corp doesn't want any of its servers to be resopnding to requests.
         grep "rollingstone.com" /etc/hosts
         
  - This grabs the line for rollingstone.com from the DNS cache. It returned:
-        98.137.246.8 rollingstone.com
+        
+         98.137.246.8 rollingstone.com
