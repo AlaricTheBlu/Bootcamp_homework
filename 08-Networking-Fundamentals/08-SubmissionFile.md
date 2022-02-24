@@ -52,3 +52,12 @@ corp doesn't want any of its servers to be resopnding to requests.
  - The address in the cache does not match the address from nslookup. This means that the hollywood server has likely been the victim of a DNS hijacking attack. A malicious user or a hacker likely edited the DNS cache to send anyone going to rollingstone.com to the other ip.
  - In order to mitigate, I recommend editing the cache to remove this malicious re-direction. Additionally, we may wish to look at any logging tools we had going at the time to see which user made the original edits to the cache. That user account has likely been compromised, and at the very least needs a new password.
  - The OSI layer that these DNS cache activities take place on is layer 7, the application layer. This is because DNS is an application that translates a human readable URL into an IP address that the computer can use (by trying to find what IP that URL is attached to).
+
+### Phase 4: ARP
+
+ - First, we must find the note hidden in /etc. I found it using:
+          ls -a | grep packet
+ - Admittedly, this was after a few other attempts. A good way could've been grep .txt instead of grep packet.
+ - The text doc sent me to a google drive file. I downloaded the pcap from there.
+ - The first thing I found while analyzing the pcap was that at one point, there were 2 different responses to the same ARP request. The first said that IP address belonged to a machine who's MAC address ended in 71:a3. The 2nd said that the IP belonged to a machine with MAC address ending in b3:b1. This is evidence that there may be a case of ARP poisoning/spoofing. This is especially likely, as the machine making the 2nd ARP reply was the one that made the request in the first place, and placed itself as at that IP. This poses a security risk, as the attacker's machine will now receive data intended for the original machine.
+ - 
