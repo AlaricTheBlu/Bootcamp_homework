@@ -20,5 +20,13 @@ corp doesn't want any of its servers to be resopnding to requests.
         sudo nmap -sS 167.172.144.11
         
  - We used sudo because the nmap command asked for root privileges.
- - The Syn scan returned that 999 of the 1000 ports were closed. The only port open was 22/tcp, which is used for ssh. This poses a potential vulnerability, as ssh can be used for command line access, granting an attacker a potentially very large amount of access to the server's contents and abilities.
+ - The Syn scan returned that 999 of the 1000 ports that it checked were closed. The only port open was 22/tcp, which is used for ssh. This poses a potential vulnerability, as ssh can be used for command line access or running commands on the computer, granting an attacker a very large amount of access to the server's contents and abilities.
  - The Syn scan occurred on the Transport layer (layer 4), as the transport layer is the layer in which tcp communications occur, which is what the Syn scan uses.
+
+### Phase 3: DNS
+
+ - first, we must log in to the server using rockstar's default credentials. First we connect with ssh, then say yes to the connection, and finally, enter the password to finish connecting.
+
+         ssh jimi@167.172.144.11
+         yes
+         hendrix
