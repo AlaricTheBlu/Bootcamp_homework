@@ -56,6 +56,8 @@ corp doesn't want any of its servers to be resopnding to requests.
 ### Phase 4: ARP
 
  - First, we must find the note hidden in /etc. I found it using:
+
+
           ls -a | grep packet
  - Admittedly, this was after a few other attempts. A good way could've been grep .txt instead of grep packet.
  - The text doc sent me to a google drive file. I downloaded the pcap from there.
