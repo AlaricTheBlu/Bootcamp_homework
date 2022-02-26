@@ -31,7 +31,7 @@ corp doesn't want any of its servers to be resopnding to requests.
          yes
          hendrix
          
- - We are now logged into the server. In order to check and see why rollingstone.com sends to a different ip, we must check the DNS cache (/etc/hosts). To do this, I used the command:
+ - We are now logged into the server. In order to check and see why rollingstone.com sends to a different site, we must check the DNS cache (/etc/hosts). To do this, I used the command:
 
         grep "rollingstone.com" /etc/hosts
         
