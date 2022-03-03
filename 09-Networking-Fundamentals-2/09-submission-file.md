@@ -11,6 +11,7 @@ Using nslookup -type=mx, the email servers for starwars.com appear as:
             starwars.com	mail exchanger = 1 aspmx.l.google.com.
 
 The resistance isn't receiving any emails, because neither asltx.l.google.com nor asltx.2.google.com appear in the mx record for starwars.com. It is being sent to mail servers that are identified by aspmx, rather than asltx. 
+
 A corrected DNS record would show something like:
 
           starwars.com        mail exchanger = 1 asltx.l.google.com.
@@ -25,6 +26,7 @@ nslookup -type=spf1 theforce.net shows:
           Address: 104.156.250.80
 
 This would explain why emails from theforce.net are often going to spam. The new mail server's ip (which is 45.23.176.21) does not appear in the spf record. Thus, the mail server is not authorized to send emails on behalf of the domain, making it appear to be false or spam.
+
 A corrected DNS record would show something like:
 
           Non-authoritative answer:
