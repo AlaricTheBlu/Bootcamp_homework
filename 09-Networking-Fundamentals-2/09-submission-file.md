@@ -34,3 +34,17 @@ A corrected DNS record would show something like:
           Address: 45.23.176.21
 
 ### Mission 3
+
+nslookup -type=CNAME www.theforce.net shows:
+
+          www.theforce.net	canonical name = theforce.net.
+
+This is what a CNAME record should look like. nslookup -type=CNAME resistance.theforce.net shows:
+
+          ** server can't find resistance.theforce.net: NXDOMAIN
+
+This would explain why the redirect isn't occuring, as it seems that the CNAME record for resistance.theforce.net currently does not exist. If it did, what it should show is:
+
+          resistance.theforce.net       canonical name = theforce.net
+
+### Mission 4
