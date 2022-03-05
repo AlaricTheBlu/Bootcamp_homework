@@ -55,3 +55,8 @@ The Empire's attack on planet N certainly makes a link state style route more di
 
 ### Mission 6
 
+aircrack-ng output that the SSID of the network was linksys, while the wireless key was dictionary. This allows us to see the encrypted traffic captured in the pcap.
+
+Through the decrypted ARP traffic, two different machines are mentioned. Firsthas a MAC address of 00:13:ce:55:98:ef and an IP address of 172.16.0.101. The 2nd has MAC of 00:0f:66:e3:e4:01 and IP of 172.16.0.1
+
+## Mission 7
