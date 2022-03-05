@@ -48,3 +48,10 @@ This would explain why the redirect isn't occuring, as it seems that the CNAME r
           resistance.theforce.net       canonical name = theforce.net
 
 ### Mission 4
+
+### Mission 5
+
+The Empire's attack on planet N certainly makes a link state style route more difficult, as before, the quickest path was through planet N. (It used to be: Batuu-DCEFJKNORQTV-Jedha, with a time of 20.) Now, it appears that there are two routes that don't pass through N that are tied for fastest. With a speed of 23, the two next fastest routes are Batuu-DCEFJILQTV-Jedha, and Batuu-DGORQTV-Jedha. Turning one, or both of these into static routes should help speed up the network traffic.
+
+### Mission 6
+
