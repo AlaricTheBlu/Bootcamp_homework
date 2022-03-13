@@ -32,19 +32,19 @@ The concept of defense in depth can be broken down into three different security
 
 Name each of the seven stages for the Cyber Kill chain and provide a brief example of each.
 
-1. Stage 1:
+1. Stage 1: Reconaisance: Gathering info on the victim. For instance, researching the identities of employees of a company, and what their levels of security access are.
 
-2. Stage 2:
+2. Stage 2: Weaponization: Taking advantage of a weak point. For instance, writing a virus to exploit a vulnerability, and then implanting it in an ordinary pdf document.
 
-3. Stage 3:
+3. Stage 3: Delivery: beginning the attack. I.E. sending our infected pdf to employee's emails, using social engineering to get them to open it and implant our virus.
 
-4. Stage 4:
+4. Stage 4: Exploitation: malicious code is executed on the target system. I.E. Somebody opens our infected pdf and our code is executed.
 
-5. Stage 5:
+5. Stage 5: Installation: malware is installed on target. I.E. our malware runs, and installs a back-door through which we can gain access. 
 
-6. Stage 6:
+6. Stage 6: Command and Control: remote control of a device is established. I.E. we use our new back-door to gain access to our system, and potentially even escalate our privileges.
 
-7. Stage 7:
+7. Stage 7: Actions on Objective: carrying out our intended goals. I.E. using our backdoor to access and download highly confidential data.
 
 
 #### Snort Rule Analysis
