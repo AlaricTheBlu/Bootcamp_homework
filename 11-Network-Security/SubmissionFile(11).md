@@ -46,6 +46,8 @@ Name each of the seven stages for the Cyber Kill chain and provide a brief examp
 
 7. Stage 7: Actions on Objective: carrying out our intended goals. I.E. using our backdoor to access and download highly confidential data.
 
+Source: https://www.crowdstrike.com/cybersecurity-101/cyber-kill-chain/
+
 
 #### Snort Rule Analysis
 
