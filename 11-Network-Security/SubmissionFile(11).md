@@ -79,15 +79,15 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
 1. Break down the Snort Rule header and explain what is happening.
 
-   Answer: The header makes it so that this rule will only occur for tcp packets from an HTTP port of an external device that arrive at any port on a home net device.
+   Answer: The header makes it so that this rule will only occur for tcp packets from an HTTP port of an external device that arrive at any port on a home net device. It appears to be looking specifically for downloads of EXE or DLL files.
    
-2. What layer of the Defense in Depth model does this alert violate?
+2. What layer of the Cyber Kill chain model does this alert violate?
 
-   Answer:
+   Answer: Stage 3: Delivery
 
 3. What kind of attack is indicated?
 
-   Answer:
+   Answer: Any number of possible attacks involving download of malicious executables or DLL files.
 
 Snort Rule #3
 
@@ -111,7 +111,7 @@ Before getting started, you should verify that you do not have any instances of 
 - Run the command that removes any running instance of `ufw`.
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <sudo apt remove ufw>
     ```
 
 #### Enable and start `firewalld`
@@ -121,8 +121,8 @@ By default, these service should be running. If not, then run the following comm
 - Run the commands that enable and start `firewalld` upon boots and reboots.
 
     ```bash
-    $ <ADD COMMAND TO enable firewalld HERE>
-    $ <ADD COMMAND TO  start firewalld HERE>
+    $ <systemctl enable firewalld>
+    $ <systemctl start firewalld>
     ```
 
   Note: This will ensure that `firewalld` remains active after each reboot.
@@ -132,7 +132,7 @@ By default, these service should be running. If not, then run the following comm
 - Run the command that checks whether or not the `firewalld` service is up and running.
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <service firewalld status>
     ```
 
 
