@@ -143,7 +143,7 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that lists all currently configured firewall rules:
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --list-all>
     ```
 
 - Take note of what Zones and settings are configured. You many need to remove unneeded services and settings.
@@ -153,7 +153,7 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that lists all currently supported services to see if the service you need is available
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --get-services>
     ```
 
 - We can see that the `Home` and `Drop` Zones are created by default.
@@ -164,7 +164,7 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that lists all currently configured zones.
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --list-all-zones>
     ```
 
 - We can see that the `Public` and `Drop` Zones are created by default. Therefore, we will need to create Zones for `Web`, `Sales`, and `Mail`.
