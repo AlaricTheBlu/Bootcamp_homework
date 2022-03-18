@@ -174,9 +174,9 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the commands that creates Web, Sales and Mail zones.
 
     ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --permanent --new-zone=web>
+    $ <firewall-cmd --permanent --new-zone=sales>
+    $ <firewall-cmd --permanent --new-zone=mail>
     ```
 
 #### Set the zones to their designated interfaces:
@@ -184,10 +184,10 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the commands that sets your `eth` interfaces to your zones.
 
     ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --permanent --zone=public --add-interface=eth0>
+    $ <firewall-cmd --permanent --zone=web --add-interface=eth1>
+    $ <firewall-cmd --permanent --zone=sales --add-interface=eth2>
+    $ <firewall-cmd --permanent --zone=mail --add-interface=eth3>
     ```
 
 #### Add services to the active zones:
@@ -197,29 +197,29 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Public:
 
     ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --zone=public --permanent --add-service http>
+    $ <firewall-cmd --zone=public --permanent --add-service https>
+    $ <firewall-cmd --zone=public --permanent --add-service pop3>
+    $ <firewall-cmd --zone=public --permanent --add-service smtp>
     ```
 
 - Web:
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --zone=web --permanent --add-service http>
     ```
 
 - Sales
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --zone=sales --permanent --add-service https>
     ```
 
 - Mail
 
     ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --zone=mail --permanent --add-service smtp>
+    $ <firewall-cmd --zone=mail --permanent --add-service pop3>
     ```
 
 - What is the status of `http`, `https`, `smtp` and `pop3`?
