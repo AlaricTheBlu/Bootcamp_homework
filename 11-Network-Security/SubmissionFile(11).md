@@ -262,7 +262,7 @@ Now, we'll want to provide truncated listings of all currently **active** zones.
 - Use a rich-rule that blocks the IP address `138.138.0.3`.
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --permanent --add-rich-rule='rule family=ipv4 source address=138.138.0.3>
     ```
 
 #### Block Ping/ICMP Requests
@@ -272,7 +272,7 @@ Harden your network against `ping` scans by blocking `icmp ehco` replies.
 - Run the command that blocks `pings` and `icmp` requests in your `public` zone.
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --permanent --zone=public ----add-icmp-block=echo-reply --add-icmp-block=echo-request>
     ```
 
 #### Rule Check
@@ -282,11 +282,11 @@ Now that you've set up your brand new `firewalld` installation, it's time to ver
 - Run the command that lists all  of the rule settings. Do one command at a time for each zone.
 
     ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --zone=public --list-all>
+    $ <firewall-cmd --zone=drop --list-all>
+    $ <firewall-cmd --zone=web --list-all>
+    $ <firewall-cmd --zone=sales --list-all>
+    $ <firewall-cmd --zone=mail --list-all>
     ```
 
 - Are all of our rules in place? If not, then go back and make the necessary modifications before checking again.
