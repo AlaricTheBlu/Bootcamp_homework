@@ -326,39 +326,39 @@ Now, we will work on another lab. Before you start, complete the following revie
 
     1.  A criminal hacker tailgates an employee through an exterior door into a secured facility, explaining that they forgot their badge at home.
 
-        Answer: 
+        Answer: Physical controls, and a tad bit of administrative controls.
 
     2. A zero-day goes undetected by antivirus software.
 
-        Answer:
+        Answer: Technical controls
 
     3. A criminal successfully gains access to HR’s database.
 
-        Answer:
+        Answer: Technical controls
 
     4. A criminal hacker exploits a vulnerability within an operating system.
 
-        Answer:
+        Answer: Technical controls
 
     5. A hacktivist organization successfully performs a DDoS attack, taking down a government website.
 
-        Answer:
+        Answer: Technical controls
 
     6. Data is classified at the wrong classification level.
 
-        Answer:
+        Answer: Administrative controls
 
     7. A state sponsored hacker group successfully firewalked an organization to produce a list of active services on an email server.
 
-        Answer:
+        Answer: Technical controls
 
 2. Name one method of protecting data-at-rest from being readable on hard drive.
 
-    Answer:
+    Answer: hashing, (for instance, with passwords)
 
 3. Name one method to protect data-in-transit.
 
-    Answer:
+    Answer: A VPN
 
 4. What technology could provide law enforcement with the ability to track and recover a stolen laptop.
 
@@ -373,25 +373,25 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 1. Which type of firewall verifies the three-way TCP handshake? TCP handshake checks are designed to ensure that session packets are from legitimate sources.
 
-  Answer:
+  Answer: A Circuit level firewall.
 
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
-  Answer:
+  Answer: A stateful packet filtering firewall.
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
-  Answer:
+  Answer: A proxy firewall
 
 
 4. Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type- all without opening the packet to inspect its contents?
 
-  Answer:
+  Answer: Packet filter firewalls
 
 
 5. Which type of firewall filters based solely on source and destination MAC address?
 
-  Answer:
+  Answer: MAC layer filtering firewalls
 
 
 
