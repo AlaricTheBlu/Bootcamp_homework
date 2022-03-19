@@ -229,9 +229,9 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that will add all current and any future blacklisted IPs to the Drop Zone.
 
      ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --permanent --zone=drop --add-source=10.208.56.23>
+    $ <firewall-cmd --permanent --zone=drop --add-source=135.95.103.76>
+    $ <firewall-cmd --permanent --zone=drop --add-source=76.34.169.118>
     ```
 
 #### Make rules permanent then reload them:
@@ -240,8 +240,10 @@ It's good practice to ensure that your `firewalld` installation remains nailed u
 
 - Run the command that reloads the `firewalld` configurations and writes it to memory
 
+Whoops, I've been doing permanent the whole time! Well, anyway:
+
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --runtime-to-permanent>
     ```
 
 #### View active Zones
@@ -251,7 +253,7 @@ Now, we'll want to provide truncated listings of all currently **active** zones.
 - Run the command that displays all zone services.
 
     ```bash
-    $ <ADD COMMAND HERE>
+    $ <firewall-cmd --list-all-zones>
     ```
 
 
