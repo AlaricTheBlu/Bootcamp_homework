@@ -304,21 +304,21 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 1. Name and define two ways an IDS connects to a network.
 
-   Answer 1:
+   Answer 1: Network tap: A hardware device that is connected to the network, providing access to it.
 
-   Answer 2:
+   Answer 2: SPAN/Port mirroring: all network data is mirrored and sent to another physical port, where it will then be analyzed.
 
 2. Describe how an IPS connects to a network.
 
-   Answer:
+   Answer: An IPS is placed as a step along the path of network traffic, aka inline with it. Traffic will flow directly through it.
 
 3. What type of IDS compares patterns of traffic to predefined signatures and is unable to detect Zero-Day attacks?
 
-   Answer:
+   Answer: Signature based IDS
 
 4. Which type of IDS is beneficial for detecting all suspicious traffic that deviates from the well-known baseline and is excellent at detecting when an attacker probes or sweeps a network?
 
-   Answer:
+   Answer: Anomaly-based IDS
 
 #### Defense in Depth
 
@@ -326,7 +326,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
     1.  A criminal hacker tailgates an employee through an exterior door into a secured facility, explaining that they forgot their badge at home.
 
-        Answer:
+        Answer: 
 
     2. A zero-day goes undetected by antivirus software.
 
