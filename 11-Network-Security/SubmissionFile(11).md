@@ -362,11 +362,11 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 4. What technology could provide law enforcement with the ability to track and recover a stolen laptop.
 
-   Answer:
+   Answer: Many laptops already come with the ability to do this. For instance, many manufacturers can flag a laptop as stolen such that they may, upon connecting to the internet, secretly check in with the manufacturer to find out if it is flagged as stolen or not. Then, upon being flagged, it can send extra info, such as current IP address, to the manufacturer. 
 
 5. How could you prevent an attacker from booting a stolen laptop using an external hard drive?
 
-    Answer:
+    Answer: Changing BIOS settings to prevent such(?)
 
 
 #### Firewall Architectures and Methodologies
