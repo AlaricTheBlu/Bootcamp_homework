@@ -7,7 +7,7 @@
 
     The request line (w/ the request being made, such as GET, or PUT)
 
-    The Headers
+    The Request Header
 
     (A row of white space)
 
@@ -18,7 +18,7 @@
 
     The status line: (w/ a status code like 200 OK or 404)
     
-    The Headers
+    The Response Header
     
     (white space)
     
@@ -31,3 +31,9 @@
 9) The HTTP response's body is where the web-code for a webpage is located.
 
 ### Using curl
+
+10) There are a number of advantages to using curl over using a browser. First, with machines or containers that don't have GUI's, you can't use a browser, so one would have to use curl. Curl, as a command line tool, is easier to use in automation, making automated HTTP requests simpler to do. Also, it includes a number of options, allowing one to make commands more specified to one's need.s
+11) --request, or -X are the options to change the request method.
+12) -H is the option to set request headers
+13) -I is the option to view only the response headers
+14) An attacker might use an OPTIONS request to find out which requests an HTTP server will respond to.
