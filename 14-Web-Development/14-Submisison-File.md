@@ -45,16 +45,21 @@
 
 ### Example HTTP Requests and responses
 
-POST /login.php HTTP/1.1
-Host: example.com
-Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 34
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Mobile Safari/537.36
+#### HTTP Request
+17) This example is a POST request
+18) Upgrade-Insecure-Requests: 1 is the header that expresses that the client would prefer an encrypted response.
+19) The request does not appear to be part of a session, as it lacks the cookie header.
+20) This request body is sending a username and password to the server, likely for the purpose of account creation or management. Specifically, it is sending a username of Barbara, and a password of, uh, well, password.
 
-username=Barbara&password=password
+#### HTTP Response
+21) The response's status code it 200 OK.
+22) The web server handling the response is Apache.
+23) The response does have a user session associated with it. This is evidenced by the header Set-Cookie: SessionID=5
+24) The content in the response body is most likely to be the the HTML code that builds the webpage.
+25) The security headers that are used in this response are:
 
+X-Content-Type: NoSniff. This prevents a certain type of sniffing (MIME sniffing?) by advertising that the content types in the response should be followed and not be changed.
+X-Frame-Options: DENY prevents the website from being loaded into a Frame, ensuring their content cannot be embedded in other sites.
+X-XSS-Protection: 1; mode=block Prevents the webpage from loading they detect a reflected cross-site scripting occurring. 
 
-17) 
+Sources: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection, 
