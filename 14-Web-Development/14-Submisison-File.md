@@ -37,3 +37,24 @@
 12) -H is the option to set request headers
 13) -I is the option to view only the response headers
 14) An attacker might use an OPTIONS request to find out which requests an HTTP server will respond to.
+
+### Sessions and Cookies
+
+15) The response header that sends a cookie is set-cookie.
+16) Request headers from the client that will continue the client's session are from Cookie:. The name and value of the cookies will appear afterwards.
+
+### Example HTTP Requests and responses
+
+POST /login.php HTTP/1.1
+Host: example.com
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Mobile Safari/537.36
+
+username=Barbara&password=password
+
+
+17) 
