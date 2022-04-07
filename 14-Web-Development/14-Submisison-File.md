@@ -65,7 +65,7 @@ X-Frame-Options: DENY prevents the website from being loaded into a Frame, ensur
 X-XSS-Protection: 1; mode=block Prevents the webpage from loading they detect a reflected cross-site scripting occurring. 
 
 
-Sources: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options 
+Sources for question 25: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options 
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options 
 
