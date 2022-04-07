@@ -59,7 +59,12 @@
 25) The security headers that are used in this response are:
 
 X-Content-Type: NoSniff. This prevents a certain type of sniffing (MIME sniffing?) by advertising that the content types in the response should be followed and not be changed.
+
 X-Frame-Options: DENY prevents the website from being loaded into a Frame, ensuring their content cannot be embedded in other sites.
+
 X-XSS-Protection: 1; mode=block Prevents the webpage from loading they detect a reflected cross-site scripting occurring. 
 
-Sources: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection, 
+
+Sources: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection, 
