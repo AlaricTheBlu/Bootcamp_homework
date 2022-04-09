@@ -73,3 +73,17 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
 
 ### Monoliths and Microservices
 
+26) In order to function well, a web app needs at least 3 individual componenets that can be managed by microservices. Those are a front end service, a back end service, and a database.
+27) An API is a service that writes to a database and communicates with other services.
+28) Containers allow microservices to be more easily scalable and redundant.
+
+### Deploying and Testing a Container Set
+
+29) Docker-Compose is a tool that can deploy multiple containers at once.
+30) Docker-Compose uses the YAML file format to deploy and configure multiple containers.
+
+### Databases
+
+31) The SQL query to see all of the info in a table named customers would be: SELECT * FROM customers;
+32) Adding new data to the table would require an INSERT INTO query
+33) Never run DELETE FROM <table name> as it would delete the whole table.
