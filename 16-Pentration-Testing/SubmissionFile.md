@@ -4,6 +4,8 @@
 
 
 - Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is:
+- - The Chief Executive Officer is Karl Fitzgerald.
+- - Source: https://demo.testfire.net/index.jsp?content=inside_executives.htm
 
 - How can this information be helpful to an attacker:
 
