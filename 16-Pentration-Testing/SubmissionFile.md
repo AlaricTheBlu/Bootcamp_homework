@@ -8,6 +8,7 @@
   - Source: https://demo.testfire.net/index.jsp?content=inside_executives.htm
 
 - How can this information be helpful to an attacker:
+  - This info could be useful to an attacker, as it gives them info on a valuable target for phishing, and could also be used to make phishing emails appear more legitimate.
 
 
 #### Step 2: DNS and Domain Discovery
