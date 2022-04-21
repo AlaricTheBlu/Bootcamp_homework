@@ -15,16 +15,20 @@
 
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
-  1. Where is the company located: 
+  1. Where is the company located:
+
     - According to the Domain Whois record, the company appears to be located in Sunnyvale California.
 
   2. What is the NetRange IP address: 
+
     - According to the Network Whois record, their Netrange IP addresses are 65.61.137.64 - 65.61.137.127.
 
   3. What is the company they use to store their infrastructure: 
+
     - According to the Network whois record, their network infrastructure is managed by the company called Rackspace.
 
   4. What is the IP address of the DNS server: 
+
     - 117.137.61.65
 
 #### Step 3: Shodan
