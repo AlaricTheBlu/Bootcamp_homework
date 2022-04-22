@@ -29,11 +29,12 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
   4. What is the IP address of the DNS server: 
 
-    - 117.137.61.65
+    - 65.61.137.117
 
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
+  - Shodan found that the ports 80, 443, and 8080 were open.
 
 #### Step 4: Recon-ng
 
