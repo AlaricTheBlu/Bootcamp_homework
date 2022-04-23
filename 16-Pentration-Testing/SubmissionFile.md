@@ -34,15 +34,21 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
-  - Shodan found that the ports 80, 443, and 8080 were open.
+  - Shodan found that the ports 80, 443, and 8080 were open. Port 80 and 8080 are running http, while 443 is running https.
 
 #### Step 4: Recon-ng
 
 - Install the Recon module `xssed`. 
+  - recon-ng
+  - marketplace install xssed
 - Set the source to `demo.testfire.net`. 
+  - modules load recon/domains-vulnerabilities/xssed
+  - options set SOURCE demo.testfire.net
 - Run the module. 
+  - run
 
 Is Altoro Mutual vulnerable to XSS: 
+- The xssed module for Recon-ng found 1 vulnerability. The Altoro Mutual website is indeed vulnerable to XSS. 
 
 ### Step 5: Zenmap
 
