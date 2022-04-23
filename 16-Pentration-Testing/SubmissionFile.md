@@ -61,13 +61,21 @@ Your client has asked that you help identify any vulnerabilities with their file
   - nmap -sV -oN zenmapscan.txt 192.168.0.10
 
 - Zenmap vulnerability script command: 
+  - I experienced issues figuring out which vulnerability it was. From The last part, I know that those ports were using Samba, particularly smbd 3.x - 4.x. While there appear to be a number of scripts to detecting vulnerabilities in Samba, none of them seemed to work, with many of them not even having an output. So, for this and the final question, I'll simply select one of them. This way I can get the experience of answering these questions atleast. I selected cve-2017-7494. The command for that one's zenmap script is:
+  - nmap --script smb-vuln-cve-2017-7494 -p 445 192.168.0.10
 
 - Once you have identified this vulnerability, answer the following questions for your client:
-  1. What is the vulnerability:
+  1. What is the vulnerability: cve-2017-7494 is a vulnerability with unpatched versions of Samba between 3.5.0 to 4.6.4 where attackers can upload a shared library containing malicious code, and then make the server load and execute that code. 
 
-  2. Why is it dangerous:
+  2. Why is it dangerous: It allows an attacker to execute code remotely on another's computer. This could grant an attacker access to confidential files, and potentially even edit files.
 
-  3. What mitigation strategies can you recommendations for the client to protect their server:
+  3. What mitigation strategies can you recommendations for the client to protect their server: Update their version of Samba to the newest version where this vulnerability has been patched.
+
+References for cve-2017-7494
+
+https://nvd.nist.gov/vuln/detail/CVE-2017-7494
+
+https://nmap.org/nsedoc/scripts/smb-vuln-cve-2017-7494.html
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
