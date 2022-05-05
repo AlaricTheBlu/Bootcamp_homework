@@ -5,4 +5,4 @@
 
 Below is a picture of the search conducted for evaluation of the download and upload speedtest.
 
-![Speed Test Table](/Pictures/Step-1.PNG)
+![Speed Test Table](./Pictures/Step-1.PNG)
