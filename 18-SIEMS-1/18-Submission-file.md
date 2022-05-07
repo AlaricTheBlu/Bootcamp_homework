@@ -19,6 +19,6 @@ Below are pictures of the report and the alert created for these Nessus scans.
 
 ![Nessus scan report](./Pictures/Step-2-report.PNG)
 
-![Nessus scan critical alert] (./Pictures/Step-2-alert.PNG)
+![Nessus scan critical alert](./Pictures/Step-2-alert.PNG)
 
 ### Part 3: Drawing the (base)line
